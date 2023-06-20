@@ -8,7 +8,8 @@ def exists_word(word: str, instance: Queue):
         file_info = instance.search(i)
         word_occurrences = []
 
-        for line_number, line in enumerate(file_info["linhas_do_arquivo"],
+        for line_number, line in enumerate(file_info
+                                           ["linhas_do_arquivo"],
                                            start=1):
             if word.lower() in line.lower():
                 word_occurrences.append({"linha": line_number})
@@ -30,7 +31,8 @@ def search_by_word(word: str, instance: Queue):
         file_info = instance.search(i)
         word_occurrences = []
 
-        for line_number, line_content in enumerate(file_info["linhas_do_arquivo"],
+        for line_number, line_content in enumerate(file_info
+                                                   ["linhas_do_arquivo"],
                                                    start=1):
             if word.lower() in line_content.lower():
                 word_occurrences.append({
