@@ -1,3 +1,4 @@
+from typing import List, Dict
 from ting_file_management.queue import Queue
 
 
